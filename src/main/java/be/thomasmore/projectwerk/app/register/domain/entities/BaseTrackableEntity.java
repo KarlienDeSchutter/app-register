@@ -14,6 +14,7 @@ import javax.persistence.Version;
 public class BaseTrackableEntity implements Serializable {
 
     @Id
+	@Column(name = "ID")
     private String id = UUID.randomUUID().toString();
     
     @Version

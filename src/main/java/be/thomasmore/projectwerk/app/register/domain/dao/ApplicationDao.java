@@ -17,5 +17,5 @@ public interface ApplicationDao {
     public List<ApplicationEntity> listAll();
 
     public void save(ApplicationEntity ae);
-    
+	
 }

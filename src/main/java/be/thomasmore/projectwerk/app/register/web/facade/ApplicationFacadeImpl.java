@@ -22,7 +22,7 @@ public class ApplicationFacadeImpl implements ApplicationFacade{
         for (ApplicationEntity entity : entities) {
             ApplicationDto dto = new ApplicationDto();
             dto.setName(entity.getName());
-            dto.setVersion(entity.getAppVersion());
+            //dto.setVersion(entity.getAppVersion());
             dtos.add(dto);
         }
         
@@ -32,7 +32,7 @@ public class ApplicationFacadeImpl implements ApplicationFacade{
     @Override
     public void create(ApplicationDto dto) {
         ApplicationEntity ae = new ApplicationEntity();
-        ae.setAppVersion(dto.getVersion());
+        //ae.setAppVersion(dto.getVersion());
         ae.setName(dto.getName());
         applicationService.save(ae);
     }
